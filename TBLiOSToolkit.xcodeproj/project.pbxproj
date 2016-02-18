@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9C92D1951C763724003E483D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92D1941C763724003E483D /* Functions.swift */; };
-		9C92D1971C763823003E483D /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92D1961C763823003E483D /* BaseSpec.swift */; };
 		9C92D1FF1C7639F6003E483D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92D1F41C7639B5003E483D /* Quick.framework */; };
 		9C92D2151C764845003E483D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92D2141C764845003E483D /* Nimble.framework */; };
+		9C92D2171C7648BD003E483D /* FunctionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92D2161C7648BD003E483D /* FunctionsSpec.swift */; };
 		9CBDC6531C62DC6F00D2E159 /* TBLiOSToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CBDC65A1C62DC6F00D2E159 /* TBLiOSToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDC64F1C62DC6F00D2E159 /* TBLiOSToolkit.framework */; };
 /* End PBXBuildFile section */
@@ -90,9 +90,9 @@
 
 /* Begin PBXFileReference section */
 		9C92D1941C763724003E483D /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = TBLFunctions/Functions.swift; sourceTree = "<group>"; };
-		9C92D1961C763823003E483D /* BaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpec.swift; sourceTree = "<group>"; };
 		9C92D1E01C7639B4003E483D /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		9C92D2141C764845003E483D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Quick/Externals/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		9C92D2161C7648BD003E483D /* FunctionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsSpec.swift; sourceTree = "<group>"; };
 		9CBDC64F1C62DC6F00D2E159 /* TBLiOSToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBLiOSToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBLiOSToolkit.h; sourceTree = "<group>"; };
 		9CBDC6541C62DC6F00D2E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				9CBDC6601C62DC6F00D2E159 /* Info.plist */,
-				9C92D1961C763823003E483D /* BaseSpec.swift */,
+				9C92D2161C7648BD003E483D /* FunctionsSpec.swift */,
 			);
 			path = TBLiOSToolkitTests;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C92D1971C763823003E483D /* BaseSpec.swift in Sources */,
+				9C92D2171C7648BD003E483D /* FunctionsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
