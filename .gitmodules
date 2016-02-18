@@ -1,3 +1,6 @@
 [submodule "TBLFunctions"]
 	path = TBLFunctions
 	url = https://github.com/twobitlabs/TBLFunctions.git
+[submodule "Quick"]
+	path = Quick
+	url = https://github.com/twobitlabs/Quick.git

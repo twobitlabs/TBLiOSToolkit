@@ -7,12 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C92D1951C763724003E483D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92D1941C763724003E483D /* Functions.swift */; };
+		9C92D1971C763823003E483D /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92D1961C763823003E483D /* BaseSpec.swift */; };
+		9C92D1FF1C7639F6003E483D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92D1F41C7639B5003E483D /* Quick.framework */; };
+		9C92D2151C764845003E483D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92D2141C764845003E483D /* Nimble.framework */; };
 		9CBDC6531C62DC6F00D2E159 /* TBLiOSToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CBDC65A1C62DC6F00D2E159 /* TBLiOSToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDC64F1C62DC6F00D2E159 /* TBLiOSToolkit.framework */; };
-		9CBDC65F1C62DC6F00D2E159 /* TBLiOSToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDC65E1C62DC6F00D2E159 /* TBLiOSToolkitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9C92D1ED1C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		9C92D1EF1C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		9C92D1F11C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused-OSXTests";
+		};
+		9C92D1F31C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		9C92D1F51C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		9C92D1F71C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused-iOSTests";
+		};
+		9C92D1F91C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CD51BDCA4AB005013A2;
+			remoteInfo = "Quick-tvOS";
+		};
+		9C92D1FB1C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CDE1BDCA4AB005013A2;
+			remoteInfo = "Quick-tvOSTests";
+		};
+		9C92D1FD1C7639B5003E483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CF01BDCA4BB005013A2;
+			remoteInfo = "QuickFocused-tvOSTests";
+		};
 		9CBDC65B1C62DC6F00D2E159 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9CBDC6461C62DC6F00D2E159 /* Project object */;
@@ -23,11 +89,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C92D1941C763724003E483D /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = TBLFunctions/Functions.swift; sourceTree = "<group>"; };
+		9C92D1961C763823003E483D /* BaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpec.swift; sourceTree = "<group>"; };
+		9C92D1E01C7639B4003E483D /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		9C92D2141C764845003E483D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Quick/Externals/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		9CBDC64F1C62DC6F00D2E159 /* TBLiOSToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBLiOSToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBLiOSToolkit.h; sourceTree = "<group>"; };
 		9CBDC6541C62DC6F00D2E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CBDC6591C62DC6F00D2E159 /* TBLiOSToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBLiOSToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CBDC65E1C62DC6F00D2E159 /* TBLiOSToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLiOSToolkitTests.swift; sourceTree = "<group>"; };
 		9CBDC6601C62DC6F00D2E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C92D2151C764845003E483D /* Nimble.framework in Frameworks */,
+				9C92D1FF1C7639F6003E483D /* Quick.framework in Frameworks */,
 				9CBDC65A1C62DC6F00D2E159 /* TBLiOSToolkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +121,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C92D1931C76370B003E483D /* TBLFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				9C92D1941C763724003E483D /* Functions.swift */,
+			);
+			name = TBLFunctions;
+			sourceTree = "<group>";
+		};
+		9C92D1E11C7639B4003E483D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C92D1EE1C7639B5003E483D /* Quick.framework */,
+				9C92D1F01C7639B5003E483D /* Quick-OSXTests.xctest */,
+				9C92D1F21C7639B5003E483D /* QuickFocused-OSXTests.xctest */,
+				9C92D1F41C7639B5003E483D /* Quick.framework */,
+				9C92D1F61C7639B5003E483D /* Quick-iOSTests.xctest */,
+				9C92D1F81C7639B5003E483D /* QuickFocused-iOSTests.xctest */,
+				9C92D1FA1C7639B5003E483D /* Quick.framework */,
+				9C92D1FC1C7639B5003E483D /* Quick-tvOSTests.xctest */,
+				9C92D1FE1C7639B5003E483D /* QuickFocused-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9CBDC6451C62DC6F00D2E159 = {
 			isa = PBXGroup;
 			children = (
+				9C92D2141C764845003E483D /* Nimble.framework */,
+				9C92D1931C76370B003E483D /* TBLFunctions */,
 				9CBDC6511C62DC6F00D2E159 /* TBLiOSToolkit */,
 				9CBDC65D1C62DC6F00D2E159 /* TBLiOSToolkitTests */,
 				9CBDC6501C62DC6F00D2E159 /* Products */,
+				9C92D1E01C7639B4003E483D /* Quick.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +178,8 @@
 		9CBDC65D1C62DC6F00D2E159 /* TBLiOSToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CBDC65E1C62DC6F00D2E159 /* TBLiOSToolkitTests.swift */,
 				9CBDC6601C62DC6F00D2E159 /* Info.plist */,
+				9C92D1961C763823003E483D /* BaseSpec.swift */,
 			);
 			path = TBLiOSToolkitTests;
 			sourceTree = "<group>";
@@ -164,6 +262,12 @@
 			mainGroup = 9CBDC6451C62DC6F00D2E159;
 			productRefGroup = 9CBDC6501C62DC6F00D2E159 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9C92D1E11C7639B4003E483D /* Products */;
+					ProjectRef = 9C92D1E01C7639B4003E483D /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9CBDC64E1C62DC6F00D2E159 /* TBLiOSToolkit */,
@@ -171,6 +275,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9C92D1EE1C7639B5003E483D /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 9C92D1ED1C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1F01C7639B5003E483D /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = 9C92D1EF1C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1F21C7639B5003E483D /* QuickFocused-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-OSXTests.xctest";
+			remoteRef = 9C92D1F11C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1F41C7639B5003E483D /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 9C92D1F31C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1F61C7639B5003E483D /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = 9C92D1F51C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1F81C7639B5003E483D /* QuickFocused-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-iOSTests.xctest";
+			remoteRef = 9C92D1F71C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1FA1C7639B5003E483D /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 9C92D1F91C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1FC1C7639B5003E483D /* Quick-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-tvOSTests.xctest";
+			remoteRef = 9C92D1FB1C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C92D1FE1C7639B5003E483D /* QuickFocused-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-tvOSTests.xctest";
+			remoteRef = 9C92D1FD1C7639B5003E483D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9CBDC64D1C62DC6F00D2E159 /* Resources */ = {
@@ -194,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C92D1951C763724003E483D /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBDC65F1C62DC6F00D2E159 /* TBLiOSToolkitTests.swift in Sources */,
+				9C92D1971C763823003E483D /* BaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +514,10 @@
 		9CBDC6671C62DC6F00D2E159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quick/Externals/Nimble/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TBLiOSToolkitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twobitlabs.TBLiOSToolkitTests;
@@ -353,6 +528,10 @@
 		9CBDC6681C62DC6F00D2E159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quick/Externals/Nimble/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TBLiOSToolkitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twobitlabs.TBLiOSToolkitTests;
