@@ -14,6 +14,8 @@
 		9CA2098C1C88F51500DEEBCD /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2098B1C88F51500DEEBCD /* GCDQueue.swift */; };
 		9CBDC6531C62DC6F00D2E159 /* TBLiOSToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CBDC65A1C62DC6F00D2E159 /* TBLiOSToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDC64F1C62DC6F00D2E159 /* TBLiOSToolkit.framework */; };
+		9CF6F9D91C8F66E800CB26B2 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6F9D81C8F66E800CB26B2 /* AVPlayerView.swift */; };
+		9CF6F9DB1C8F676800CB26B2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6F9DA1C8F676800CB26B2 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		9CBDC6541C62DC6F00D2E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CBDC6591C62DC6F00D2E159 /* TBLiOSToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBLiOSToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBDC6601C62DC6F00D2E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF6F9D81C8F66E800CB26B2 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVPlayerView.swift; path = Views/AVPlayerView.swift; sourceTree = "<group>"; };
+		9CF6F9DA1C8F676800CB26B2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = Views/CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 				9CBDC6521C62DC6F00D2E159 /* TBLiOSToolkit.h */,
 				9CBDC6541C62DC6F00D2E159 /* Info.plist */,
 				9CA2098B1C88F51500DEEBCD /* GCDQueue.swift */,
+				9CF6F9CC1C8F667D00CB26B2 /* Views */,
 			);
 			path = TBLiOSToolkit;
 			sourceTree = "<group>";
@@ -185,6 +190,15 @@
 				9C92D2161C7648BD003E483D /* FunctionsSpec.swift */,
 			);
 			path = TBLiOSToolkitTests;
+			sourceTree = "<group>";
+		};
+		9CF6F9CC1C8F667D00CB26B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF6F9D81C8F66E800CB26B2 /* AVPlayerView.swift */,
+				9CF6F9DA1C8F676800CB26B2 /* CircleView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF6F9DB1C8F676800CB26B2 /* CircleView.swift in Sources */,
+				9CF6F9D91C8F66E800CB26B2 /* AVPlayerView.swift in Sources */,
 				9CA2098C1C88F51500DEEBCD /* GCDQueue.swift in Sources */,
 				9C92D1951C763724003E483D /* Functions.swift in Sources */,
 			);
