@@ -20,12 +20,12 @@ class CircleView: UIView {
     }
 
     override func drawRect(rect: CGRect) {
-        let context = UIGraphicsGetCurrentContext()
+        guard let context = UIGraphicsGetCurrentContext() else { return }
         CGContextSetBlendMode(context, .Multiply)
         CGContextAddEllipseInRect(context, rect)
         CGContextSetFillColor(context, CGColorGetComponents(fillColor.CGColor))
         fillColor.set()
-        CGContextFillPath(context);
+        CGContextFillPath(context)
     }
 
     override func intrinsicContentSize() -> CGSize {
