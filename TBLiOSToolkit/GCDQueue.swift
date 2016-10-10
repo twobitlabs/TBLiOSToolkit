@@ -15,34 +15,34 @@
  */
 
 protocol ExcutableQueue {
-    var queue: dispatch_queue_t { get }
+    var queue: DispatchQueue { get }
 }
 
 extension ExcutableQueue {
-    func executeAsync(closure: () -> Void) {
-        dispatch_async(queue, closure)
+    func executeAsync(_ closure: @escaping () -> Void) {
+        queue.async(execute: closure)
     }
 }
 
 enum GCDQueue: ExcutableQueue {
-    case Main
-    case UserInteractive
-    case UserInitiated
-    case Utility
-    case Background
+    case main
+    case userInteractive
+    case userInitiated
+    case utility
+    case background
 
-    var queue: dispatch_queue_t {
+    var queue: DispatchQueue {
         switch self {
-        case .Main:
-            return dispatch_get_main_queue()
-        case .UserInteractive:
-            return dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0)
-        case .UserInitiated:
-            return dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)
-        case .Utility:
-            return dispatch_get_global_queue(QOS_CLASS_UTILITY, 0)
-        case .Background:
-            return dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
+        case .main:
+            return DispatchQueue.main
+        case .userInteractive:
+            return DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)
+        case .userInitiated:
+            return DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated)
+        case .utility:
+            return DispatchQueue.global(qos: DispatchQoS.QoSClass.utility)
+        case .background:
+            return DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
         }
     }
 }
@@ -51,8 +51,8 @@ enum SerialQueue: String, ExcutableQueue {
     case DownLoadImage = "myApp.SerialQueue.DownLoadImage"
     case UpLoadFile = "myApp.SerialQueue.UpLoadFile"
 
-    var queue: dispatch_queue_t {
-        return dispatch_queue_create(rawValue, DISPATCH_QUEUE_SERIAL)
+    var queue: DispatchQueue {
+        return DispatchQueue(label: rawValue, attributes: [])
     }
 }
 

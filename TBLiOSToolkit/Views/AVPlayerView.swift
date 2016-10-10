@@ -7,7 +7,7 @@ import AVFoundation
 class AVPlayerView: UIView {
 
     init(player: AVPlayer) {
-        super.init(frame: CGRectZero)
+        super.init(frame: CGRect.zero)
         playerLayer().player = player
     }
 
@@ -15,11 +15,11 @@ class AVPlayerView: UIView {
         fatalError("not intended for use in a NIB")
     }
 
-    override class func layerClass() -> AnyClass {
+    override class var layerClass : AnyClass {
         return AVPlayerLayer.self
     }
 
-    private func playerLayer() -> AVPlayerLayer {
+    fileprivate func playerLayer() -> AVPlayerLayer {
         return layer as! AVPlayerLayer
     }
     

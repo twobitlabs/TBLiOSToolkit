@@ -173,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				9C04A7BD1CBD756B003DB35F /* Quick.framework */,
-				9C04A7BF1CBD756B003DB35F /* Quick-OSXTests.xctest */,
-				9C04A7C11CBD756B003DB35F /* QuickFocused-OSXTests.xctest */,
+				9C04A7BF1CBD756B003DB35F /* Quick-macOSTests.xctest */,
+				9C04A7C11CBD756B003DB35F /* QuickFocused-macOSTests.xctest */,
 				9C04A7C31CBD756B003DB35F /* Quick.framework */,
 				9C04A7C51CBD756B003DB35F /* Quick-iOSTests.xctest */,
 				9C04A7C71CBD756B003DB35F /* QuickFocused-iOSTests.xctest */,
@@ -188,10 +188,10 @@
 		9C04A7E41CBD7599003DB35F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C04A7ED1CBD7599003DB35F /* Nimble.framework */,
-				9C04A7EF1CBD7599003DB35F /* NimbleTests.xctest */,
 				9C04A7F11CBD7599003DB35F /* Nimble.framework */,
 				9C04A7F31CBD7599003DB35F /* NimbleTests.xctest */,
+				9C04A7ED1CBD7599003DB35F /* Nimble.framework */,
+				9C04A7EF1CBD7599003DB35F /* NimbleTests.xctest */,
 				9C04A7F51CBD7599003DB35F /* Nimble.framework */,
 				9C04A7F71CBD7599003DB35F /* NimbleTests.xctest */,
 			);
@@ -313,14 +313,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Two Bit Labs";
 				TargetAttributes = {
 					9CBDC64E1C62DC6F00D2E159 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					9CBDC6581C62DC6F00D2E159 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -360,17 +362,17 @@
 			remoteRef = 9C04A7BC1CBD756B003DB35F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9C04A7BF1CBD756B003DB35F /* Quick-OSXTests.xctest */ = {
+		9C04A7BF1CBD756B003DB35F /* Quick-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-OSXTests.xctest";
+			path = "Quick-macOSTests.xctest";
 			remoteRef = 9C04A7BE1CBD756B003DB35F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9C04A7C11CBD756B003DB35F /* QuickFocused-OSXTests.xctest */ = {
+		9C04A7C11CBD756B003DB35F /* QuickFocused-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-OSXTests.xctest";
+			path = "QuickFocused-macOSTests.xctest";
 			remoteRef = 9C04A7C01CBD756B003DB35F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -521,8 +523,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -569,8 +573,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -590,6 +596,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -601,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -612,6 +620,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -619,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -629,6 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.twobitlabs.TBLiOSToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -643,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twobitlabs.TBLiOSToolkitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -657,6 +669,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twobitlabs.TBLiOSToolkitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
