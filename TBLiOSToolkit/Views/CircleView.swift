@@ -1,3 +1,4 @@
+import UIKit
 
 /**
  Simple circular view with the given background color and radius
